@@ -7,14 +7,14 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: `Cara`,
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
+    siteTitle: `Roadmap`,
+    siteTitleAlt: `Edgar-Cuppari - RoadMap`,
+    siteHeadline: `Edgar - Cuppari DEV from @blenfit4ent`,
+    siteUrl: `https://edgar-cuppari-dev.vercel.app/`,
     siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
-    siteLanguage: `en`,
+    siteLanguage: `de`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `@blendit4ent`,
   },
   plugins: [
     {
@@ -25,14 +25,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
+        name: `Edgar Cuppari -  @blendit4ent/gatsby-theme-cara`,
+        short_name: `Roadmap EC`,
         description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
         start_url: `/`,
         background_color: `#141821`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#f6ad55`,
+        //theme_color: `#f6ad55`,
         display: `standalone`,
         icons: [
           {
