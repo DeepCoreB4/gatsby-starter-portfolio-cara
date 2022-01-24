@@ -71,7 +71,6 @@ export default NotFound;
 export const query = graphql`
 query {
 site {
-host
 siteMetadata {
 siteLanguage
 }
