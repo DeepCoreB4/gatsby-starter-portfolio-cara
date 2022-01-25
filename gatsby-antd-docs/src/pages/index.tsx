@@ -1,17 +1,23 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import Layout from '../../components/layout'
-import { graphql } from "gatsby";
+import * as React from 'react'
+import { Link } from 'gatsby'
 import { Button } from 'antd'
 import { GithubOutlined, TwitterOutlined } from '@ant-design/icons'
 
 const IndexPage = () => {
   return (
-    <Layout pageHeading='Documentation' pageTitle='Doc'>
-      
+    <div align="center" style={{ padding: 80 }}>
+      <p
+        style={{
+          color: 'cornflowerblue',
+          fontSize: 50,
+          fontWeight: 'bold',
+        }}
+      >
+        Gatsby Ant Design Docs Boilerplate
+      </p>
       <h2>A gatsby starter to create documentation websites</h2>
       <p>
-        Mein Webdesign Workflow Presentation DOC/ This is a fork of{' '}
+        This is a fork of{' '}
         <a href="https://github.com/cvluca/gatsby-starter-markdown">
           https://github.com/cvluca/gatsby-starter-markdown
         </a>
@@ -36,24 +42,11 @@ const IndexPage = () => {
         </Button>
 
         <Button type="primary" size="large">
-          <Link to="gatsby-antd-docs/public/index.html"> Get Started</Link>
+          <Link to="/docs/template/get-started/introduction">Get Started</Link>
         </Button>
       </Button.Group>
-    </Layout>
+    </div>
   )
-};
-export default IndexPage;
-export const query = graphql`
-  query {
-    allFile {
-      edges {
-        node {
-          extension
-          dir
-          modifiedTime
-        }
-      }
-    }
-  }
-`
+}
 
+export default IndexPage
