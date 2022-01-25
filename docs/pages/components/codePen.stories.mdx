@@ -1,0 +1,49 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import { CodePen } from '../../../packages/mdx-embed/src/components/codepen';
+
+<Meta title="Components/CodePen" component={CodePen} />
+
+# CodePen
+
+Display a CodePen by including the component in your `.mdx`. The `codePenId` prop is required.
+
+<ArgsTable of={CodePen} />
+
+## Usage
+
+<Canvas>
+  <Story name="usage">
+    <CodePen codePenId="PNaGbb" />
+  </Story>
+</Canvas>
+
+## Tabs
+
+<Canvas>
+  <Story name="tabs">
+    <CodePen codePenId="PNaGbb" tabs={['js', 'result']} />
+  </Story>
+</Canvas>
+
+## Help
+
+<Story name="help" />
+
+To embed a CodePen using the `<CodePen />` component grab the `codePenId` from the URL.
+
+```
+https://codepen.io/team/codepen/pen/PNaGbb
+```
+
+The `codePenId` is this bit.
+
+```
+PNaGbb
+```
+
+Then use it like this.
+
+```jsx
+<CodePen codePenId="PNaGbb" />
+```

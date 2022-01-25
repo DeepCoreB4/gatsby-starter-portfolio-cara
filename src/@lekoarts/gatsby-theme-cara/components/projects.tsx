@@ -56,4 +56,6 @@ const Projects = ({ offset, factor = 1 }: { offset: number; factor?: number }) =
   </div>
 )
 
+
+
 export default Projects

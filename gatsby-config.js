@@ -15,7 +15,6 @@ module.exports = {
     siteLanguage: `de`,
     siteImage: `/banner.jpg`,
     author: `@blendit4ent`,
-
     menuLinks: [
       {
         name: 'home',
@@ -27,6 +26,17 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`
+      }
+    },
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-mdx-embed`
+  ],
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

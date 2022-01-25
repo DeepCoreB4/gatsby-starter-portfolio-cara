@@ -1,0 +1,48 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "description": "MDX Embed docs",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --config ../.prettierrc.js --ignore-path ../.prettierignore --write \"**/*.{json,js,ts,tsx}\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006 -s ./public --ci",
+    "storybook:build": "build-storybook --docs -s ./public",
+    "deploy": "npm run storybook:build && netlify deploy --prod"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier",
+      "pre-push": ""
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/mdx-embed.git"
+  },
+  "author": "Paul Scanlon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/mdx-embed/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/mdx-embed#readme",
+  "dependencies": {
+    "@storybook/addon-docs": "^6.1.5",
+    "@storybook/addon-links": "^6.1.5",
+    "@storybook/addons": "^6.1.5",
+    "@storybook/react": "^6.2.9",
+    "@storybook/theming": "^6.1.5",
+    "axios": "^0.21.1",
+    "mdx-embed": "*",
+    "react-docgen-typescript": "^1.20.5",
+    "storybook-addon-mdx-embed": "*",
+    "theme-ui": "^0.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@mdx-js/mdx": "^1.6.16",
+    "@mdx-js/react": "^1.6.16",
+    "babel-loader": "^8.1.0",
+    "husky": "^4.2.5"
+  }
+}

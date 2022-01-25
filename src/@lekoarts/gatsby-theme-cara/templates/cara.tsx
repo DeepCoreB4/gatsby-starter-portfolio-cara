@@ -9,7 +9,7 @@ import Contact from "../components/contact"
 const Cara = () => (
   <Layout>
     <Parallax pages={2}>
-      <Hero offset={0.2} factor={0.7} />
+      <Hero offset={0.3} factor={0.6} />
       <Projects offset={0.5} factor={0.8} />
       <Contact offset={1.1} factor={0.9} />
     </Parallax>

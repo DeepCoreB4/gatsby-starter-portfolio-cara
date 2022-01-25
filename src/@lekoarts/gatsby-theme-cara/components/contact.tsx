@@ -6,6 +6,8 @@ import Content from "../elements/content"
 import Svg from "./svg"
 import { UpDown, UpDownWide, waveAnimation } from "../styles/animations"
 import Footer from "./footer"
+import React from 'react';
+import { MDXEmbedProvider } from 'mdx-embed';
 // @ts-ignore
 import ContactMDX from "../sections/contact"
 
