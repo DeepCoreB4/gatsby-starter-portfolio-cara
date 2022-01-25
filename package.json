@@ -17,8 +17,7 @@
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "storybook": "yarn workspace docs storybook"
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
