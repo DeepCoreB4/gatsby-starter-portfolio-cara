@@ -1,9 +1,10 @@
-/*Site - Theming by Edgar-Cuppar.DEV*/
+/*Site jan2022- Theming by Edgar-Cuppar.DEV*/
 /*Body______*/
 .container {
     margin: auto;
-    padding-top: 4vh;
-    max-width: 500px;
+    padding-top: 5.8vh;
+    max-width: 1080px;
+    min-width: 680px;
     max-height: max-content;
     font-family: sans-serif;
 }
@@ -14,7 +15,7 @@
 .toggle{
     position: absolute;
     z-index: 9;
-    top: -10px;
+    top: -5px;
     right: 100px;
     cursor: pointer;
 
@@ -24,12 +25,13 @@ ul {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    padding-left: 2vw;
 }
 /*NavigationBar______*/
 .navBar {
     position: fixed;
     z-index: 9000;
-    height: 20;
+    height: 4.5vh;
     width:100%;
     left: 0;
     position: -webkit-sticky; /* Safari */
@@ -44,12 +46,15 @@ ul {
 
 }
 .nav-link-item {
-    padding-right: 2rem;
+    padding-right: 4rem;
     cursor: pointer;
+    padding-left: 4vw;
 }
 .nav-link-text {
     color: mod 'light' black;
     color: mod 'dark' rgb(223, 84, 20);
+    padding-left: -1rem;
+    padding-left: 4vw;
 }
 .active {
     background-color: #04AA6D;

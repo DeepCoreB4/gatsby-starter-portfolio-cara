@@ -53,9 +53,8 @@ const Layout = ({ pageTitle, pageHeading, children }) => {
                         <li className={navLinkItem}>
                             <Button className={toggle}>
                                 <icon
-                                    sx={{ variant: `icon.faMoon`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
+                                    sx={{ variant: `button.faMoon`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
                                     onClick={toggleColorMode}
-                                    
                                     type="button"
                                     aria-label="Toggle dark mode"
                                 >
