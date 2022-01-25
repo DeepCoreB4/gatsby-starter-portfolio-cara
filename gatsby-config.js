@@ -15,7 +15,45 @@ module.exports = {
     siteLanguage: `de`,
     siteImage: `/banner.jpg`,
     author: `@blendit4ent`,
+
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'page2',
+        link: '/page-2'
+      }
+    ]
   },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: `images`,
+      },
+    },
+  ],
+  plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: `images`,
+      },
+    },
+  ],
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-cara`,

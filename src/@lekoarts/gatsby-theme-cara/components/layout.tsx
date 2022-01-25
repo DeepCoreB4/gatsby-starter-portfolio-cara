@@ -6,6 +6,7 @@ import SEO from "./seo"
 type LayoutProps = { children: React.ReactNode; className?: string }
 
 const Layout = ({ children, className = `` }: LayoutProps) => (
+  
   <React.Fragment>
     <Global
       styles={(t) => ({

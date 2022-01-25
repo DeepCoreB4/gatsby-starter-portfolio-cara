@@ -53,13 +53,14 @@ const NotFound = ({ data }) => (
           <Themed.h1>404 - Page not found</Themed.h1>
           <Themed.p>
             Go back to
-            <Link to="/">homepage</Link>.
+            <Link to="/"> Homepage</Link>.
+            <main>
+              <p>This site was last built on:</p>
+              <p>{data.site.buildTime}</p>
+            </main>
           </Themed.p>
         </Inner>
-        <main>
-          <p>This site was last built on:</p>
-          <p>{data.site.buildTime}</p>
-        </main>
+        
       </Content>
     </div>
   </Parallax>
@@ -70,11 +71,15 @@ export default NotFound;
 
 export const query = graphql`
 query {
-site {
-siteMetadata {
-siteLanguage
-}
-buildTime(locale: "CH")
-}
+  site {
+    siteMetadata {
+      siteLanguage
+      author
+      menuLinks {
+        link
+      }
+    }
+    buildTime(locale: "CH", formatString: "dddd, MMMM, yyyy hh:mm:ss ")
+  }
 }
 `
